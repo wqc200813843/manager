@@ -10,7 +10,9 @@
         <el-menu-item index="2-2">选项2</el-menu-item>
         <el-menu-item index="2-3">选项3</el-menu-item>
       </el-submenu> -->
-      <el-menu-item index="2">组织管理</el-menu-item>
+      <el-menu-item index="2">
+        <router-link class="router-node" to="/taskManager">任务管理</router-link>  
+      </el-menu-item>
       <el-menu-item index="3">房屋管理</el-menu-item>
       <el-menu-item index="4">缴费报表</el-menu-item>
       <el-menu-item index="5">入住率报表</el-menu-item>
