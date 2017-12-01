@@ -18,6 +18,11 @@ export default new Router({
       path: '/taskManager',
       name: 'taskManager',
       component: resolve => resolve(require('@/view/TaskManager/index'))
+    },
+    {
+      path: '/orgManager',
+      name: 'orgManager',
+      component: () => import('@/view/OrgManager/index')
     }
   ]
 })

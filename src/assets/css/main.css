@@ -52,7 +52,7 @@ html,body{
   display: block;
   text-decoration: none!important;
 }
-.org-house-tree{
+.org-view-tree{
   position: absolute;
   top: 0;
   bottom: 0;

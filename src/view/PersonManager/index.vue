@@ -1,9 +1,9 @@
 <template>
   <div class="person-manager">
-    <org-house-tree class="org-house-tree"></org-house-tree>
+    <org-house-tree class="org-view-tree"></org-house-tree>
     <div class="tree-view-container flex">
       <div class="operation pb10 clearfix"><!-- 操作栏 -->
-        <el-button type="primary" @click="personEdit">人员导入</el-button>
+        <el-button type="primary" @click="personEdit">添加</el-button>
         <el-button>导入</el-button>
         <el-button>导出</el-button>
         <el-button type="danger">批量删除</el-button>
