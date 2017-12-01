@@ -70,6 +70,7 @@
             <el-table-column label="操作" width="150">
               <template slot-scope="scope">
                 <el-button
+                  @click="personEdit(scope)"
                   size="mini">
                   编辑</el-button>
                 <el-button
@@ -96,7 +97,7 @@ export default {
   data () {
     return {
       searchCondition: {
-        name: '3232',
+        name: '',
         personType: '',
         sex: '',
         pageSize: 10,
@@ -162,8 +163,8 @@ export default {
       this.searchCondition.sex = ''
       this.searchCondition.name = ''
     },
-    personEdit: function () {
-      this.$refs['personEdit'].personEdit()
+    personEdit: function (data) {
+      this.$refs['personEdit'].personEdit(data || null)
     }
   }
 }
